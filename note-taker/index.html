@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my notes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="home-container">
+        <a href="../home/home.php" class="home-button">Go Back to Home</a>
+    </div>
+
+    <div class="container">
+        <h1>MY NOTES</h1>
+        <div class="buttons">
+            <button id="add-note-btn">Add Note</button>
+        </div>
+
+        <div id="note-container" class="note-container">
+            <!-- Displayed notes will go here -->
+        </div>
+
+        <div id="note-form" class="hidden">
+            <h2>Add a New Note</h2>
+            <input type="text" id="note-title" placeholder="Title" required>
+            <textarea id="note-content" placeholder="Note content" required></textarea>
+            <div>
+                <input type="file" id="upload-image" accept="image/*">
+            </div>
+            <button id="save-note-btn">Save Note</button>
+        </div>
+    </div>
+
+    <!-- Full Note Display -->
+    <div id="note-details" class="hidden">
+        <button id="close-note-details" class="close-btn">X</button>
+        <h3 id="full-note-title"></h3>
+        <p id="full-note-content"></p>
+        <img id="full-note-image" src="" alt="Note Image">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

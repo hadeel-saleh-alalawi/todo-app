@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <a href="../home/home.php" class="home-button">Go Back to Home</a>
+  </div>
+  <div class="todo-container">
+    <h1>To do List</h1>
+    <div class="input-container">
+      <input type="text" id="task-input" placeholder="Add a new task...">
+      <button id="add-task-btn">+</button>
+    </div>
+    <ul id="task-list"></ul>
+  </div>
+  <div id="progress-container">
+    <svg width="120" height="120" viewBox="0 0 120 120">
+      <circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+      <circle id="progress-bar" cx="60" cy="60" r="50" stroke="#32cd32" stroke-width="10" fill="none" stroke-dasharray="314" stroke-dashoffset="0"></circle>
+    </svg>
+  </div>
+  <script src="todo.js" defer></script>
+</body>
+</html>
