@@ -30,6 +30,7 @@ if (!isset($_SESSION['user_name'])) {
     <div class="navigation">
         <a href="../tic-tac-toe/game.html">Tic Tac Toe</a>
         <a href="../todo-list/todo.html">To-Do List</a>
+        <a href="../note-taker/index.html">Take Notes</a> 
     </div>
 
     <a href="../logout.php" class="logout">Logout</a>
@@ -38,4 +39,5 @@ if (!isset($_SESSION['user_name'])) {
     <script src="home.js"></script>
 </body>
 </html>
+
 
